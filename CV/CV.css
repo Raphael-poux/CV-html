@@ -1,0 +1,225 @@
+#background {
+  background-color: rgb(230, 230, 255);
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.Body_container {
+  background-color: white;
+  display: grid;
+  grid-template-columns:
+    35% 65%;
+  grid-template-areas:
+    "Side Main"
+}
+
+.flex {
+  display: flex;
+  justify-content: right;
+  flex-direction: column
+}
+
+.flex_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 8px 40px;
+}
+
+
+.grid_language {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Langue Niveau";
+  padding: 0px 20px 8px 40px
+}
+
+.grid_language p {
+  grid-area: Niveau;
+  color: white;
+  margin: 0;
+}
+
+.grid_language li {
+  grid-area: Langue;
+  color: white;
+  margin: 0;
+}
+
+.Side_container {
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
+  grid-area: Side;
+  display: grid;
+  grid-template-columns:
+    1fr;
+  grid-template-areas:
+    "Profilepicture"
+    "Contact"
+    "Skills"
+    "Qualities"
+    "Languages";
+}
+
+.Side_container subtitle {
+  display: block;
+  background-color: #072742;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin: 20px 0px 20px 40px;
+}
+
+.Side_container li {
+  color: white
+}
+
+#Profilepicture {
+  grid-area: Profilepicture;
+  background-color: #005E9E;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#Qualities {
+  grid-area: Qualities;
+  background-color: #005E9E;
+}
+
+#Contact {
+  grid-area: Contact;
+  background-color: #005E9E;
+}
+
+#Skills {
+  grid-area: Skills;
+  background-color: #005E9E;
+}
+
+#Languages {
+  grid-area: Languages;
+  background-color: #005E9E;
+}
+
+.Main_container {
+  grid-area: Main;
+  background-color: #072742;
+  display: grid;
+  grid-template-columns:
+    1fr;
+  grid-template-areas:
+    "Logo"
+    "Profile"
+    "Education"
+    "Experience"
+    "Hobbies";
+}
+
+.Main_container subtitle {
+  font-size: 40px;
+  color: #072742;
+  display: block;
+  text-align: center; 
+  background-color:#005E9E;
+  border: 1Px solid #005E9E;
+  border-radius: 20px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+.Main_container p {
+  color:#072742;
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.Main_container li {
+  color:#072742;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+#Logo {
+  grid-area: Logo;
+  font-size: 50;
+  font-weight: bold;
+  Color:white;
+  margin: 0
+}
+
+#Logo p {
+  margin: 0 0 0 20px;
+  color:white;
+  font-size: 50px;
+}
+
+#Profile {
+  grid-area: Profile;
+  background-color: white;
+  border: 1px solid #072742;
+  border-radius: 40px
+}
+
+
+#Education {
+  grid-area: Education;
+  background-color: white;
+  border: 1px solid #072742;
+  border-radius: 40px
+}
+
+#Experience {
+  grid-area: Experience;
+  background-color: white;
+  border: 1px solid #072742;
+  border-radius: 40px
+}
+
+#Hobbies {
+  grid-area: Hobbies;
+  background-color: white;
+  border: 1px solid #072742;
+  border-radius: 40px
+}
+
+label {
+  display: block;
+}
+
+.my_progress {
+    height: 1em;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.my_progress::-webkit-progress-bar {
+    background-color: white; /* Couleur de fond de la barre de progression */
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+.my_progress::-webkit-progress-value {
+    background-color: #072742; /* Couleur de la partie remplie de la barre de progression */
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+.flex_contact {
+  display: flex;
+  padding: 5px 0px 0px 40px;
+}
+
+.flex_contact p {
+  margin-left: 5px;
+  color: white;
+  margin: 10px 0px 0px 8px;
+}
+
+#flex_hobbies {
+  display: flex;
+  justify-content: center;
+}
