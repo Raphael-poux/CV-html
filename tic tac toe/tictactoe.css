@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 80px;
+    color: #1B1310;
+    transform: rotate(-4deg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.board {
+    display: grid;
+    transform: rotate(3deg);
+    margin-top: 25px;
+    margin-left: 25px;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor: pointer;
+    background-color: rgba(224,204,172, 0);
+    font-weight: normal;
+    color:rgba(25,15,5, 0.7);
+    font-family: 'Pacifico', cursive;
+}
+
+#cell0 {
+    border-bottom: 1px solid #6e6453;
+    border-right: 1px solid #6e6453;
+
+}
+
+#cell1 {
+    border-bottom: 1px solid #6e6453;
+    border-left: 1px solid #6e6453;
+    border-right: 1px solid #6e6453;
+}
+
+#cell2 {
+    border-bottom: 1px solid #6e6453;
+    border-left: 1px solid #6e6453;
+}
+
+#cell3 {
+    border-bottom: 1px solid #6e6453;
+    border-right: 1px solid #6e6453;
+    border-top: 1px solid #6e6453;
+}
+
+#cell4 {
+    border-bottom: 1px solid #6e6453;
+    border-left: 1px solid #6e6453;
+    border-right: 1px solid #6e6453;
+    border-top: 1px solid #6e6453;
+}
+
+#cell5 {
+    border-bottom: 1px solid #6e6453;
+    border-left: 1px solid #6e6453;
+    border-top: 1px solid #6e6453;
+}
+
+#cell6 {
+    border-top: 1px solid #6e6453;
+    border-right: 1px solid #6e6453;
+    
+}
+
+#cell7 {
+    border-left: 1px solid #6e6453;
+    border-right: 1px solid #6e6453;
+    border-top: 1px solid #6e6453;
+}
+
+#cell8 {
+    border-left: 1px solid #6e6453;
+    border-top: 1px solid #6e6453;
+}
+
+
+.cell:hover {
+    background-color: rgb(200, 200, 200, 0.5);
+}
+
+.cell:empty {
+    cursor: pointer;
+}
+
+
+#new-game {
+    display: block;
+    margin-top: 10px;
+
+}
+
+body {
+    background-image: url('tictactoebackground.jpg');
+    background-size: cover; /* pour couvrir tout l'écran */
+}
+
+
+
+#reset {
+    display: block;
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
+    border: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgba(25,15,5, 0.7);
+    background-color: rgb(255, 255, 255, 0);
+    position: fixed;
+    left: 15%;
+    transform: rotate(-2deg);
+}
+
+#reset:hover {
+    background-color: rgb(200, 200, 200, 0.5);
+    border: 2px solid rgba(25,15,5, 0.7);
+}
+
+.points {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 25px;
+    color: #6e6453;
+    transform: rotate(22deg);
+}
+
+#playerX {
+    margin-left: 30px;
+}
+
+#playerO {
+    margin-left: 35px;
+}
+
+.changement-couleur {
+    transition: background-color 1s ease; /* Animation de transition fluide */
+}
